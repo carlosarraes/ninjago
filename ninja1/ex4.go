@@ -4,10 +4,16 @@ import "fmt"
 
 type hot int
 
+var (
+	x hot
+	y int
+)
+
 func main() {
-	var x hot
 	fmt.Println(x)
 	fmt.Printf("%T\n", x)
 	x = 42
 	fmt.Println(x)
+	y = int(x)
+	fmt.Println(y)
 }
